@@ -21,7 +21,6 @@ class Orbiter {
          */
         void update();
 
-        // void resetOrbiters();
 
         private:
         bn::sprite_ptr _sprite;
