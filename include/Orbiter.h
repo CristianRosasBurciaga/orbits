@@ -2,7 +2,6 @@
 #include <bn_core.h>
 
 #include "Center.h"
-#include "bn_sprite_items_dot.h"
 
 
 class Orbiter {
@@ -21,6 +20,8 @@ class Orbiter {
          * Take a step orbiting around the center.
          */
         void update();
+
+        // void resetOrbiters();
 
         private:
         bn::sprite_ptr _sprite;
