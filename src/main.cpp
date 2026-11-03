@@ -43,7 +43,12 @@ int main() {
             }
         }
 
-        //
+        //Remove all orbiters when START is pressed
+        if(bn::keypad::start_pressed()) {
+            while(orbiters.size() > 0) {
+                orbiters.pop_back();
+            }
+        }
 
         center.update();
         for(Orbiter& orbiter : orbiters) {
